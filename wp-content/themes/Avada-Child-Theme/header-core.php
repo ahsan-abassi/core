@@ -1,0 +1,362 @@
+<?php
+
+/**
+
+ * Header template.
+
+ *
+
+ * @package Avada
+
+ * @subpackage Templates
+
+ */
+
+
+
+// Do not allow directly accessing this file.
+
+if ( ! defined( 'ABSPATH' ) ) {
+
+    exit( 'Direct script access denied.' );
+
+}
+
+?>
+
+<!DOCTYPE html>
+
+<html class="<?php echo ( Avada()->settings->get( 'smooth_scrolling' ) ) ? 'no-overflow-y' : ''; ?>" <?php language_attributes(); ?>>
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <?php Avada()->head->the_viewport(); ?>
+
+
+
+    <?php wp_head(); ?>
+
+
+
+    <?php $object_id = get_queried_object_id(); ?>
+
+    <?php $c_page_id = Avada()->fusion_library->get_page_id(); ?>
+
+
+
+    <script type="text/javascript">
+
+        var doc = document.documentElement;
+
+        doc.setAttribute('data-useragent', navigator.userAgent);
+
+
+
+        //addition
+
+        jQuery( document ).ready(function() {
+            //
+            //     jQuery('a.fusion-flyout-menu-toggle').click(function() {
+            //
+            //         if(jQuery('.fusion-header-v6').hasClass('fusion-flyout-menu-active')){
+            //
+            //             jQuery('body').removeClass("push-body");
+            //
+            //
+            //
+            //         }else{
+            //
+            //             jQuery('body').addClass("push-body");
+            //
+            //         }
+            //
+            //
+            //
+            //
+            //
+            //     });
+            //
+
+            jQuery(".fusion-flyout-menu .fusion-menu li.contact a").on("click", function(a) {
+
+                a.preventDefault();
+
+                if(jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu").hasClass('contact-visible')){
+                    jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu").removeClass('contact-visible');
+                    setTimeout(function() {
+                        jQuery(".menu-contact-widget-area").removeClass("contact-form-visible");
+                    }, 200);
+                    jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu .left-container ul.fusion-menu li.contact").removeClass('current-menu-item');
+
+                }else{
+                    jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu").addClass("contact-visible");
+                    setTimeout(function() {
+                        jQuery(".menu-contact-widget-area").addClass("contact-form-visible");
+                    }, 600);
+                    jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu .left-container ul.fusion-menu li.contact").addClass('current-menu-item');
+
+                }
+
+
+
+            });
+
+            jQuery("a.fusion-flyout-menu-toggle").on("click", function() {
+                if(jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu").hasClass('contact-visible')) {
+                    jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu").removeClass('contact-visible');
+                    jQuery(".menu-contact-widget-area").removeClass("contact-form-visible");
+                    jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu .left-container ul.fusion-menu li.contact").removeClass('current-menu-item');
+                }
+            });
+            // jQuery(".fusion-header-has-flyout-menu .fusion-flyout-menu").on("click", function(a) {
+            // }
+
+
+            //})
+
+
+            jQuery("body a.core-cause-btn").on("click",function(){
+                alert("CLICKED");
+            });
+
+
+
+        });
+
+    </script>
+
+
+
+    <?php
+
+    /**
+
+     *
+
+     * The settings below are not sanitized.
+
+     * In order to be able to take advantage of this,
+
+     * a user would have to gain access to the database
+
+     * in which case this is the least on your worries.
+
+     */
+
+    echo Avada()->settings->get( 'google_analytics' ); // WPCS: XSS ok.
+
+    echo Avada()->settings->get( 'space_head' ); // WPCS: XSS ok.
+
+    ?>
+
+</head>
+
+
+
+<?php
+
+$wrapper_class = ( is_page_template( 'blank.php' ) ) ? 'wrapper_blank' : '';
+
+
+
+if ( 'modern' === Avada()->settings->get( 'mobile_menu_design' ) ) {
+
+    $mobile_logo_pos = strtolower( Avada()->settings->get( 'logo_alignment' ) );
+
+    if ( 'center' === strtolower( Avada()->settings->get( 'logo_alignment' ) ) ) {
+
+        $mobile_logo_pos = 'left';
+
+    }
+
+}
+
+
+
+?>
+
+<body <?php body_class(); ?>>
+
+<div id="wptime-plugin-preloader"></div>
+
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'Avada' ); ?></a>
+
+<?php
+
+do_action( 'avada_before_body_content' );
+
+
+
+$boxed_side_header_right = false;
+
+$page_bg_layout = 'default';
+
+if ( $c_page_id && is_numeric( $c_page_id ) ) {
+
+    $fpo_page_bg_layout = get_post_meta( $c_page_id, 'pyre_page_bg_layout', true );
+
+    $page_bg_layout = ( $fpo_page_bg_layout ) ? $fpo_page_bg_layout : $page_bg_layout;
+
+}
+
+
+
+?>
+
+<?php if ( ( ( 'Boxed' === Avada()->settings->get( 'layout' ) && ( 'default' === $page_bg_layout || '' == $page_bg_layout ) ) || 'boxed' === $page_bg_layout ) && 'Top' != Avada()->settings->get( 'header_position' ) ) : ?>
+
+<div id="boxed-wrapper">
+
+    <?php endif; ?>
+
+    <?php if ( ( ( 'Boxed' === Avada()->settings->get( 'layout' ) && 'default' === $page_bg_layout ) || 'boxed' === $page_bg_layout ) && 'framed' === Avada()->settings->get( 'scroll_offset' ) ) : ?>
+
+        <div class="fusion-sides-frame"></div>
+
+    <?php endif; ?>
+
+    <div id="wrapper" class="<?php echo esc_attr( $wrapper_class ); ?> wrapper-core">
+
+        <div id="home" style="position:relative;top:-1px;"></div>
+
+        <?php avada_header_template( 'Below', ( is_archive() || Avada_Helper::bbp_is_topic_tag() ) && ! ( class_exists( 'WooCommerce' ) && is_shop() ) ); ?>
+
+        <?php if ( 'Left' === Avada()->settings->get( 'header_position' ) || 'Right' === Avada()->settings->get( 'header_position' ) ) : ?>
+
+            <?php avada_side_header(); ?>
+
+        <?php endif; ?>
+        <div id="sliders-container">
+            <?php
+                echo do_shortcode('[rev_slider alias="blog"]');
+            ?>
+        </div>
+
+        <?php avada_header_template( 'Above', ( is_archive() || Avada_Helper::bbp_is_topic_tag() ) && ! ( class_exists( 'WooCommerce' ) && is_shop() ) ); ?>
+
+
+        <?php if ( is_page_template( 'contact.php' ) && Avada()->settings->get( 'recaptcha_public' ) && Avada()->settings->get( 'recaptcha_private' ) ) : ?>
+
+            <script type="text/javascript">var RecaptchaOptions = { theme : '<?php echo esc_attr( Avada()->settings->get( 'recaptcha_color_scheme' ) ); ?>' };</script>
+
+        <?php endif; ?>
+
+
+        <?php if ( is_page_template( 'contact.php' ) && Avada()->settings->get( 'gmap_address' ) && Avada()->settings->get( 'status_gmap' ) ) : ?>
+
+            <?php
+
+            $map_popup             = ( ! Avada()->settings->get( 'map_popup' ) ) ? 'yes' : 'no';
+
+            $map_scrollwheel       = ( Avada()->settings->get( 'map_scrollwheel' ) ) ? 'yes' : 'no';
+
+            $map_scale             = ( Avada()->settings->get( 'map_scale' ) ) ? 'yes' : 'no';
+
+            $map_zoomcontrol       = ( Avada()->settings->get( 'map_zoomcontrol' ) ) ? 'yes' : 'no';
+
+            $address_pin           = ( Avada()->settings->get( 'map_pin' ) ) ? 'yes' : 'no';
+
+            $address_pin_animation = ( Avada()->settings->get( 'gmap_pin_animation' ) ) ? 'yes' : 'no';
+
+            ?>
+
+            <div id="fusion-gmap-container">
+
+                <?php
+
+                echo Avada()->google_map->render_map( // WPCS: XSS ok.
+
+                    array(
+
+                        'address'                  => esc_html( Avada()->settings->get( 'gmap_address' ) ),
+
+                        'type'                     => esc_attr( Avada()->settings->get( 'gmap_type' ) ),
+
+                        'address_pin'              => esc_attr( $address_pin ),
+
+                        'animation'                => esc_attr( $address_pin_animation ),
+
+                        'map_style'                => esc_attr( Avada()->settings->get( 'map_styling' ) ),
+
+                        'overlay_color'            => esc_attr( Avada()->settings->get( 'map_overlay_color' ) ),
+
+                        'infobox'                  => esc_attr( Avada()->settings->get( 'map_infobox_styling' ) ),
+
+                        'infobox_background_color' => esc_attr( Avada()->settings->get( 'map_infobox_bg_color' ) ),
+
+                        'infobox_text_color'       => esc_attr( Avada()->settings->get( 'map_infobox_text_color' ) ),
+
+                        'infobox_content'          => htmlentities( Avada()->settings->get( 'map_infobox_content' ) ),
+
+                        'icon'                     => esc_attr( Avada()->settings->get( 'map_custom_marker_icon' ) ),
+
+                        'width'                    => esc_attr( Avada()->settings->get( 'gmap_dimensions', 'width' ) ),
+
+                        'height'                   => esc_attr( Avada()->settings->get( 'gmap_dimensions', 'height' ) ),
+
+                        'zoom'                     => esc_attr( Avada()->settings->get( 'map_zoom_level' ) ),
+
+                        'scrollwheel'              => esc_attr( $map_scrollwheel ),
+
+                        'scale'                    => esc_attr( $map_scale ),
+
+                        'zoom_pancontrol'          => esc_attr( $map_zoomcontrol ),
+
+                        'popup'                    => esc_attr( $map_popup ),
+
+                    )
+
+                );
+
+                ?>
+
+            </div>
+
+        <?php endif; ?>
+
+        <?php
+
+        $main_css   = '';
+
+        $row_css    = '';
+
+        $main_class = '';
+
+
+
+        if ( apply_filters( 'fusion_is_hundred_percent_template', false, $c_page_id ) ) {
+
+            $main_css = 'padding-left:0px;padding-right:0px;';
+
+            $hundredp_padding = get_post_meta( $c_page_id, 'pyre_hundredp_padding', true );
+
+            if ( Avada()->settings->get( 'hundredp_padding' ) && ! $hundredp_padding ) {
+
+                $main_css = 'padding-left:' . Avada()->settings->get( 'hundredp_padding' ) . ';padding-right:' . Avada()->settings->get( 'hundredp_padding' );
+
+            }
+
+            if ( $hundredp_padding ) {
+
+                $main_css = 'padding-left:' . $hundredp_padding . ';padding-right:' . $hundredp_padding;
+
+            }
+
+            $row_css    = 'max-width:100%;';
+
+            $main_class = 'width-100';
+
+        }
+
+        do_action( 'avada_before_main_container' );
+
+        ?>
+
+        <main id="main" role="main" class="clearfix <?php echo esc_attr( $main_class ); ?>" style="<?php echo esc_attr( $main_css ); ?>">
+
+            <div class="fusion-row" style="<?php echo esc_attr( $row_css ); ?>">
+

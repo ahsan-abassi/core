@@ -1,0 +1,289 @@
+0000.000 (0) Opened log file at time: Fri, 13 Jul 2018 06:42:27 +0000 on http://innovisionlab.com/demo/coreagency
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.11 WP: 4.9.7 PHP: 5.6.17 (cgi-fcgi, Linux kensington.lunarbreeze.com 2.6.32-673.26.1.lve1.4.29.el6.x86_64 #1 SMP Tue Jun 20 13:27:00 EDT 2017 x86_64) MySQL: 5.6.39 WPLANG: en_US Server: Apache/2.4.18 (Unix) OpenSSL/1.0.1e-fips mod_bwlimited/1.4 mod_fcgid/2.3.9 safe_mode: 0 max_execution_time: 900 memory_limit: 1000M (used: 14.1M | 15.5M) multisite: N openssl: OpenSSL 1.0.1e-fips 11 Feb 2013 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.097 (0) Free space on disk containing Updraft's temporary directory: 88550.1 MB
+0000.101 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.114 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.116 (0) Set semaphore last lock (fd) time to 2018-07-13 06:42:27
+0000.117 (0) Semaphore lock (fd) complete
+0000.123 (0) Backup run: resumption=0, nonce=80aef0c04095, begun at=1531464147 (0s ago), job type=backup
+0000.125 (0) Scheduling a resumption (1) after 555 seconds (1531464702) in case this run gets aborted
+0000.169 (0) Checking if we have a zip executable available
+0000.170 (0) Testing: /usr/bin/zip
+0000.176 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.178 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.179 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.180 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.181 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.187 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.189 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.210 (0) Working binary zip found: /usr/bin/zip
+0000.212 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.213 (0) Creation of backups of directories: beginning
+0000.217 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0003.212 (0) Total entities for the zip file: 550 directories, 4797 files (0 skipped as non-modified), 56.2 MB
+0003.215 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0003.324 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: size is now: 0.10 MB
+0003.333 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 100 files added (on-disk size: 131.2 KB)
+0003.345 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 200 files added (on-disk size: 131.2 KB)
+0003.363 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 300 files added (on-disk size: 131.2 KB)
+0003.382 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 400 files added (on-disk size: 131.2 KB)
+0003.400 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 500 files added (on-disk size: 131.2 KB)
+0003.411 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.7 MB, 4797 files batched, 501 (502) added so far); re-opening (prior size: 131.2 KB)
+0009.649 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: size is now: 1.30 MB
+0009.660 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 600 files added (on-disk size: 1302.2 KB)
+0009.679 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 700 files added (on-disk size: 1302.2 KB)
+0009.700 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 800 files added (on-disk size: 1302.2 KB)
+0009.709 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 900 files added (on-disk size: 1302.2 KB)
+0009.727 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1000 files added (on-disk size: 1302.2 KB)
+0009.739 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.8 MB, 4797 files batched, 501 (1003) added so far); re-opening (prior size: 1302.2 KB)
+0015.632 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: size is now: 2.00 MB
+0015.644 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1100 files added (on-disk size: 2042.4 KB)
+0015.657 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1200 files added (on-disk size: 2042.4 KB)
+0015.674 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1300 files added (on-disk size: 2042.4 KB)
+0015.691 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1400 files added (on-disk size: 2042.4 KB)
+0015.699 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1500 files added (on-disk size: 2042.4 KB)
+0015.711 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (19 MB, 4797 files batched, 501 (1504) added so far); re-opening (prior size: 2042.4 KB)
+0034.834 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: size is now: 7.20 MB
+0034.859 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1600 files added (on-disk size: 7390.3 KB)
+0034.886 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1700 files added (on-disk size: 7390.3 KB)
+0034.918 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1800 files added (on-disk size: 7390.3 KB)
+0034.946 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 1900 files added (on-disk size: 7390.3 KB)
+0034.978 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2000 files added (on-disk size: 7390.3 KB)
+0034.987 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.8 MB, 4797 files batched, 501 (2005) added so far); re-opening (prior size: 7390.3 KB)
+0044.222 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: size is now: 8.70 MB
+0044.240 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2100 files added (on-disk size: 8938.7 KB)
+0044.261 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2200 files added (on-disk size: 8938.7 KB)
+0044.289 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2300 files added (on-disk size: 8938.7 KB)
+0044.322 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2400 files added (on-disk size: 8938.7 KB)
+0044.343 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2500 files added (on-disk size: 8938.7 KB)
+0044.359 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.7 MB, 4797 files batched, 501 (2506) added so far); re-opening (prior size: 8938.7 KB)
+0057.536 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: size is now: 11.40 MB
+0057.590 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2600 files added (on-disk size: 11690.8 KB)
+0057.608 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2700 files added (on-disk size: 11690.8 KB)
+0057.636 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2800 files added (on-disk size: 11690.8 KB)
+0057.647 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 2900 files added (on-disk size: 11690.8 KB)
+0057.665 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3000 files added (on-disk size: 11690.8 KB)
+0057.677 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.7 MB, 4797 files batched, 501 (3007) added so far); re-opening (prior size: 11690.8 KB)
+0071.820 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3100 files added (on-disk size: 13595.5 KB)
+0071.851 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3200 files added (on-disk size: 13595.5 KB)
+0071.888 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3300 files added (on-disk size: 13595.5 KB)
+0071.915 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3400 files added (on-disk size: 13595.5 KB)
+0071.945 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3500 files added (on-disk size: 13595.5 KB)
+0071.957 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.5 MB, 4797 files batched, 501 (3508) added so far); re-opening (prior size: 13595.5 KB)
+0084.716 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: size is now: 17.80 MB
+0084.726 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3600 files added (on-disk size: 18213.5 KB)
+0084.761 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3700 files added (on-disk size: 18213.5 KB)
+0084.786 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3800 files added (on-disk size: 18213.5 KB)
+0084.818 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 3900 files added (on-disk size: 18213.5 KB)
+0084.845 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 4000 files added (on-disk size: 18213.5 KB)
+0084.859 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (0.1 MB, 4797 files batched, 501 (4009) added so far); re-opening (prior size: 18213.5 KB)
+0104.145 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 4100 files added (on-disk size: 18448.4 KB)
+0104.187 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 4200 files added (on-disk size: 18448.4 KB)
+0104.211 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 4300 files added (on-disk size: 18448.4 KB)
+0104.252 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 4400 files added (on-disk size: 18448.4 KB)
+0104.285 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 4500 files added (on-disk size: 18448.4 KB)
+0104.290 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.8 MB, 4797 files batched, 501 (4510) added so far); re-opening (prior size: 18448.4 KB)
+0125.309 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 4600 files added (on-disk size: 19484.3 KB)
+0125.337 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip.tmp: 4700 files added (on-disk size: 19484.3 KB)
+0153.554 (0) Created plugins zip (0) - 21343 KB in 153.2 s (139.3 KB/s) (sha1: d68b09a304d0776c259044d7273184692ac97584, sha256: c10e87b19941391575a851a20b7f506f3ee1bb104ddc2538e24d55055818b915)
+0153.559 (0) Beginning creation of dump of themes (split every: 400 MB)
+0155.746 (0) Total entities for the zip file: 238 directories, 1564 files (0 skipped as non-modified), 19.9 MB
+0155.765 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0155.813 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0155.845 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0155.874 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0155.929 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0155.944 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.3 MB, 1564 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0175.418 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: size is now: 3.00 MB
+0175.430 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 600 files added (on-disk size: 3029 KB)
+0175.478 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 700 files added (on-disk size: 3029 KB)
+0175.550 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 800 files added (on-disk size: 3029 KB)
+0175.605 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 900 files added (on-disk size: 3029 KB)
+0175.663 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 1000 files added (on-disk size: 3029 KB)
+0175.683 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (11 MB, 1564 files batched, 501 (1002) added so far); re-opening (prior size: 3029 KB)
+0196.873 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: size is now: 6.20 MB
+0196.901 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 1100 files added (on-disk size: 6395.8 KB)
+0196.948 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 1200 files added (on-disk size: 6395.8 KB)
+0197.000 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 1300 files added (on-disk size: 6395.8 KB)
+0197.038 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 1400 files added (on-disk size: 6395.8 KB)
+0197.081 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: 1500 files added (on-disk size: 6395.8 KB)
+0197.091 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.2 MB, 1564 files batched, 501 (1503) added so far); re-opening (prior size: 6395.8 KB)
+0205.499 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip.tmp: size is now: 7.80 MB
+0214.121 (0) Created themes zip (0) - 8171.2 KB in 60.1 s (135.9 KB/s) (sha1: 48ad239b47726bd53c48c9ed638e184c3b036a27, sha256: e6e92e3ad5a1a5bdef819243badb70f61cbaeca96b62f5e36e47c4499794e044)
+0214.155 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0214.161 (0) Looking for candidates to back up in: /home/innov60/public_html/demo/coreagency/wp-content/uploads
+0214.167 (0) finding files: fusionredux: adding to list (1)
+0214.173 (0) finding files: 2016: adding to list (2)
+0214.184 (0) finding files: fusion-scripts: adding to list (3)
+0214.189 (0) finding files: fusion-builder-avada-pages: adding to list (4)
+0214.199 (0) finding files: fusion_slider_exports: adding to list (5)
+0214.205 (0) finding files: revslider: adding to list (6)
+0214.211 (0) finding files: 2018: adding to list (7)
+0214.222 (0) finding files: fusion-styles: adding to list (8)
+0214.228 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0215.658 (0) Total entities for the zip file: 174 directories, 792 files (0 skipped as non-modified), 79.7 MB
+0215.709 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0215.748 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0215.800 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0215.852 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0215.904 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.1 MB, 792 files batched, 497 (497) added so far); re-opening (prior size: 0 KB)
+0235.985 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: size is now: 16.60 MB
+0235.996 (0) A useful amount of data was added after this amount of zip processing: 21.5 s (normalised: 21.4 s, rate: 1196.1 KB/s)
+0235.999 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: 500 files added (on-disk size: 17022.4 KB)
+0236.020 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.1 MB, 792 files batched, 80 (577) added so far); re-opening (prior size: 17022.4 KB)
+0315.580 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: size is now: 40.80 MB
+0315.584 (0) A useful amount of data was added after this amount of zip processing: 80.1 s (normalised: 79.9 s, rate: 320.3 KB/s)
+0315.588 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: 600 files added (on-disk size: 41754.6 KB)
+0315.625 (0) Zip: backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: 700 files added (on-disk size: 41754.6 KB)
+0315.640 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25 MB, 792 files batched, 178 (755) added so far); re-opening (prior size: 41754.6 KB)
+0376.730 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip.tmp: size is now: 65.70 MB
+0376.736 (0) A useful amount of data was added after this amount of zip processing: 61.2 s (normalised: 61.2 s, rate: 418.2 KB/s)
+0477.667 (0) Created uploads zip (0) - 70972.9 KB in 262.7 s (270.1 KB/s) (sha1: 76098065a4004b13e5328b404056d428c1147e90, sha256: 6b7a088f1ac8865bf86fa4af438a4e0b29830ba2d795d90170f5841b58c6d9a5)
+0477.689 (0) Beginning backup of other directories found in the content directory (index: 0)
+0477.723 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0477.729 (0) Looking for candidates to back up in: /home/innov60/public_html/demo/coreagency/wp-content
+0477.735 (0) finding files: index.php: adding to list (1)
+0477.740 (0) finding files: themes: skipping: this is the themes directory
+0477.745 (0) finding files: updraft: skipping: this is the updraft directory
+0477.755 (0) finding files: plugins: skipping: this is the plugins directory
+0477.766 (0) finding files: uploads: skipping: this is the uploads directory
+0477.772 (0) finding files: upgrade: skipping: excluded by options
+0478.539 (0) Total entities for the zip file: 0 directories, 1 files (0 skipped as non-modified), 0 MB
+0478.605 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-others.zip.tmp: size is now: 0.00 MB
+0478.615 (0) Created others zip (0) - 0.2 KB in 0.1 s (2.4 KB/s) (sha1: 23c966ba73b5262ed24510ba6c426358a708b515, sha256: f8b939f6e6b43b5609154a55aaf6ade0666051209981784ac42e083b47e03737)
+0478.650 (0) Saving backup status to database (elements: 8)
+0478.672 (0) Beginning creation of database dump (WordPress DB)
+0478.684 (0) Testing: /usr/bin/mysqldump
+0478.817 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1226 bytes total)
+0478.821 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0478.862 (0) Table wp_options: Total expected rows (approximate): 327
+0479.768 (0) Table wp_options: Total rows added: 323 in 0.90 seconds
+0479.775 (0) Table wp_options: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_options.table.gz - 276.1 KB)
+0479.832 (0) Table wp_users: Total expected rows (approximate): 2
+0492.556 (0) Table wp_users: Total rows added: 2 in 0.03 seconds
+0492.563 (0) Table wp_users: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_users.table.gz - 0.6 KB)
+0492.588 (0) Table wp_usermeta: Total expected rows (approximate): 41
+0492.618 (0) Table wp_usermeta: Total rows added: 41 in 0.03 seconds
+0492.625 (0) Table wp_usermeta: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_usermeta.table.gz - 1.7 KB)
+0492.672 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0492.691 (0) Table wp_commentmeta: Total rows added: 0 in 0.01 seconds
+0492.695 (0) Table wp_commentmeta: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0492.742 (0) Table wp_comments: Total expected rows (approximate): 1
+0492.782 (0) Table wp_comments: Total rows added: 1 in 0.03 seconds
+0492.785 (0) Table wp_comments: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_comments.table.gz - 0.7 KB)
+0492.829 (0) Table wp_links: Total expected rows (approximate): 0
+0492.856 (0) Table wp_links: Total rows added: 0 in 0.02 seconds
+0492.863 (0) Table wp_links: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_links.table.gz - 0.4 KB)
+0492.904 (0) Table wp_postmeta: Total expected rows (approximate): 3160
+0493.726 (0) Table wp_postmeta: Total rows added: 3160 in 0.81 seconds
+0493.747 (0) Table wp_postmeta: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_postmeta.table.gz - 34 KB)
+0493.784 (0) Table wp_posts: Total expected rows (approximate): 452
+0495.901 (0) Table wp_posts: Total rows added: 452 in 2.11 seconds
+0495.934 (0) Table wp_posts: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_posts.table.gz - 186.3 KB)
+0495.981 (0) Table wp_term_relationships: Total expected rows (approximate): 54
+0496.007 (0) Table wp_term_relationships: Total rows added: 54 in 0.02 seconds
+0496.011 (0) Table wp_term_relationships: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_term_relationships.table.gz - 0.6 KB)
+0496.061 (0) Table wp_term_taxonomy: Total expected rows (approximate): 25
+0496.087 (0) Table wp_term_taxonomy: Total rows added: 25 in 0.02 seconds
+0496.094 (0) Table wp_term_taxonomy: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_term_taxonomy.table.gz - 0.6 KB)
+0496.127 (0) Table wp_termmeta: Total expected rows (approximate): 5
+0496.153 (0) Table wp_termmeta: Total rows added: 5 in 0.02 seconds
+0496.160 (0) Table wp_termmeta: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_termmeta.table.gz - 0.7 KB)
+0496.189 (0) Table wp_terms: Total expected rows (approximate): 25
+0496.221 (0) Table wp_terms: Total rows added: 25 in 0.02 seconds
+0496.233 (0) Table wp_terms: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_terms.table.gz - 0.8 KB)
+0496.271 (0) Table wp_revslider_css: Total expected rows (approximate): 121
+0496.423 (0) Table wp_revslider_css: Total rows added: 121 in 0.04 seconds
+0496.430 (0) Table wp_revslider_css: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_css.table.gz - 5.3 KB)
+0496.468 (0) Table wp_revslider_layer_animations: Total expected rows (approximate): 0
+0496.489 (0) Table wp_revslider_layer_animations: Total rows added: 0 in 0.01 seconds
+0496.500 (0) Table wp_revslider_layer_animations: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_layer_animations.table.gz - 0.3 KB)
+0496.537 (0) Table wp_revslider_navigations: Total expected rows (approximate): 0
+0496.558 (0) Table wp_revslider_navigations: Total rows added: 0 in 0.01 seconds
+0496.565 (0) Table wp_revslider_navigations: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_navigations.table.gz - 0.3 KB)
+0496.590 (0) Table wp_revslider_sliders: Total expected rows (approximate): 3
+0496.629 (0) Table wp_revslider_sliders: Total rows added: 3 in 0.02 seconds
+0496.635 (0) Table wp_revslider_sliders: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_sliders.table.gz - 4 KB)
+0496.672 (0) Table wp_revslider_slides: Total expected rows (approximate): 4
+0496.705 (0) Table wp_revslider_slides: Total rows added: 4 in 0.03 seconds
+0496.717 (0) Table wp_revslider_slides: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_slides.table.gz - 6.9 KB)
+0496.759 (0) Table wp_revslider_static_slides: Total expected rows (approximate): 2
+0496.785 (0) Table wp_revslider_static_slides: Total rows added: 2 in 0.02 seconds
+0496.798 (0) Table wp_revslider_static_slides: finishing file (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_static_slides.table.gz - 0.4 KB)
+0496.816 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_options.table.gz (1/18): adding to final database dump
+0497.638 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_users.table.gz (2/18): adding to final database dump
+0497.646 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_usermeta.table.gz (3/18): adding to final database dump
+0497.653 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_commentmeta.table.gz (4/18): adding to final database dump
+0497.676 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_comments.table.gz (5/18): adding to final database dump
+0497.682 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_links.table.gz (6/18): adding to final database dump
+0497.687 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_postmeta.table.gz (7/18): adding to final database dump
+0497.946 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_posts.table.gz (8/18): adding to final database dump
+0499.258 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_term_relationships.table.gz (9/18): adding to final database dump
+0499.279 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_term_taxonomy.table.gz (10/18): adding to final database dump
+0499.298 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_termmeta.table.gz (11/18): adding to final database dump
+0499.307 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_terms.table.gz (12/18): adding to final database dump
+0499.325 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_css.table.gz (13/18): adding to final database dump
+0499.371 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_layer_animations.table.gz (14/18): adding to final database dump
+0499.390 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_navigations.table.gz (15/18): adding to final database dump
+0499.409 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_sliders.table.gz (16/18): adding to final database dump
+0499.420 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_slides.table.gz (17/18): adding to final database dump
+0499.469 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db-table-wp_revslider_static_slides.table.gz (18/18): adding to final database dump
+0499.490 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db.gz: finished writing out complete database file (512 KB)
+0499.652 (0) Total database tables backed up: 18 (backup_2018-07-13-0642_CoreAgency_80aef0c04095-db.gz, size: 529855, sha256)
+0499.720 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0499.726 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0499.732 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0499.743 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-others.zip: others: This file has not yet been successfully uploaded: will queue
+0499.754 (0) backup_2018-07-13-0642_CoreAgency_80aef0c04095-db.gz: db: This file has not yet been successfully uploaded: will queue
+0499.760 (0) Saving backup history. Total backup size: 98.6 MB
+0499.784 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0499.818 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0499.829 (0) No remote despatch: user chose no remote backup service
+0499.846 (0) Recording as successfully uploaded: backup_2018-07-13-0642_CoreAgency_80aef0c04095-plugins.zip (3209c11c104fac38e53d22825af8187c)
+0499.889 (0) Recording as successfully uploaded: backup_2018-07-13-0642_CoreAgency_80aef0c04095-themes.zip (feb3bdd8c0bda9870c3dcfe1b2030922)
+0499.937 (0) Recording as successfully uploaded: backup_2018-07-13-0642_CoreAgency_80aef0c04095-uploads.zip (09f833e5df10bb621c892746510fb6af)
+0499.971 (0) Recording as successfully uploaded: backup_2018-07-13-0642_CoreAgency_80aef0c04095-others.zip (9b802f2da14774649aa52755916933da)
+0500.023 (0) Recording as successfully uploaded: backup_2018-07-13-0642_CoreAgency_80aef0c04095-db.gz (ac2e26c32cbc406f350c015ab41ba9eb)
+0500.071 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0500.086 (0) Number of backup sets in history: 3; groups (db): 1
+0500.094 (0) Examining (for databases) backup set with group_id=0, nonce=80aef0c04095, datestamp=1531464147 (Jul 13 2018 06:42:27)
+0500.100 (0) This backup set is the backup set just made, so will not be deleted.
+0500.100 (0) Examining (for databases) backup set with group_id=0, nonce=4c8c8a687e86, datestamp=1531288795 (Jul 11 2018 05:59:55)
+0500.100 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0500.116 (0) Examining (for databases) backup set with group_id=0, nonce=554d6aebafdc, datestamp=1530770706 (Jul 05 2018 06:05:06)
+0500.116 (0) 1530770706: db: this set includes a database (backup_2018-07-05-0605_CoreAgency_554d6aebafdc-db.gz); db count is now 2
+0500.116 (0) 1530770706: db: over retain limit (2); will delete this database
+0500.116 (0) Delete file: backup_2018-07-05-0605_CoreAgency_554d6aebafdc-db.gz, service=none
+0500.127 (0) Deleting local copy (backup_2018-07-05-0605_CoreAgency_554d6aebafdc-db.gz)
+0500.146 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0500.151 (0) Number of backup sets in history: 3; groups (files): 1
+0500.158 (0) Examining (for files) backup set with nonce=80aef0c04095, datestamp=1531464147 (Jul 13 2018 06:42:27)
+0500.158 (0) This backup set is the backup set just made, so will not be deleted.
+0500.163 (0) This backup set is the backup set just made, so will not be deleted.
+0500.163 (0) This backup set is the backup set just made, so will not be deleted.
+0500.164 (0) This backup set is the backup set just made, so will not be deleted.
+0500.164 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0500.184 (0) Examining (for files) backup set with nonce=4c8c8a687e86, datestamp=1531288795 (Jul 11 2018 05:59:55)
+0500.184 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0500.185 (0) Examining (for files) backup set with nonce=554d6aebafdc, datestamp=1530770706 (Jul 05 2018 06:05:06)
+0500.185 (0) plugins: over retain limit (2); will delete this file entity
+0500.185 (0) themes: over retain limit (2); will delete this file entity
+0500.185 (0) uploads: over retain limit (2); will delete this file entity
+0500.185 (0) others: over retain limit (2); will delete this file entity
+0500.185 (0) Delete file: backup_2018-07-05-0605_CoreAgency_554d6aebafdc-plugins.zip, service=none
+0500.190 (0) Deleting local copy (backup_2018-07-05-0605_CoreAgency_554d6aebafdc-plugins.zip)
+0500.246 (0) Delete file: backup_2018-07-05-0605_CoreAgency_554d6aebafdc-themes.zip, service=none
+0500.248 (0) Deleting local copy (backup_2018-07-05-0605_CoreAgency_554d6aebafdc-themes.zip)
+0500.267 (0) Delete file: backup_2018-07-05-0605_CoreAgency_554d6aebafdc-uploads.zip, service=none
+0500.268 (0) Deleting local copy (backup_2018-07-05-0605_CoreAgency_554d6aebafdc-uploads.zip)
+0500.306 (0) Delete file: backup_2018-07-05-0605_CoreAgency_554d6aebafdc-others.zip, service=none
+0500.312 (0) Deleting local copy (backup_2018-07-05-0605_CoreAgency_554d6aebafdc-others.zip)
+0500.319 (0) This backup set is now empty; will remove from history
+0500.325 (0) Deleting log file (log.554d6aebafdc.txt)
+0500.331 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0500.354 (0) Resume backup (80aef0c04095, 0): finish run
+0500.370 (0) Decremented the semaphore (fd) by 1
+0500.380 (0) Semaphore (fd) unlocked
+0500.385 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0500.416 (0) No email will/can be sent - the user has not configured an email address.
+0500.422 (0) The backup apparently succeeded and is now complete
